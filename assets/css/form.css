@@ -1,0 +1,87 @@
+/* Form styles */
+:root {
+	--button: #265b91;
+}
+body.dark {
+	--button: #076D31;;
+}
+.zform {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .zform-group {
+    margin-bottom: 20px;
+  }
+  
+  .zform-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .zform-group input[type="text"],
+  .zform-group input[type="email"],
+  .zform-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: inherit;
+  }
+  
+  .zform-group input[type="text"]:focus,
+  .zform-group input[type="email"]:focus,
+  .zform-group input[type="number"]:focus {
+    border-color: var(--button);
+    outline: none;
+  }
+  
+  .zform-group-b{
+    background-color: var(--button);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .zform-group-b :hover {
+    background-color: #0069d9;
+  }
+  
+  /* Dark theme */
+  .zform.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .zform-group.dark input[type="text"],
+  .zform-group.dark input[type="email"],
+  .zform-group.dark input[type="number"] {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .zform-group.dark input[type="text"]:focus,
+  .zform-group.dark input[type="email"]:focus,
+  .zform-group.dark input[type="number"]:focus {
+    border-color: var(--button);
+    color: #fff;
+  }
+  
+  .zform-group-b.dark {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .zform-group-b.dark :hover {
+    background-color: #ccc;
+  }
+  
