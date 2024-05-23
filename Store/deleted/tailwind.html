@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body class="bg-gray-200">
+    <div class="fixed bottom-12 left-12">
+        <div class="modal relative bottom-8">
+            <div class="modal-wrapper modal-transition rounded-lg">
+                <div class="modal-wrapper-inner relative">
+                    <div class="modal-header rounded-t-lg z-10">
+                        <button class="modal-close modal-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 icon-close icon text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <div class="modal-heading text-white px-6 pt-8 pb-12">
+                            <p class="text-sm pb-2">Welcome to</p>
+                            <h2 class="text-4xl font-semibold pb-4">Treat Bucks!</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body rounded-b-lg p-4">
+                        <div class="modal-content rounded-b-lg">
+                            <div class="bg-white shadow shadow-xl px-4 py-8 rounded-lg -mt-12 z-10 relative">
+                                <h2 class="text-base font-bold text-center">Daily Spin</h2>
+                                <p class="text-sm text-[#637381] text-center py-2">"Spin, Win, Repeat! Daily rewards
+                                    await. Spin now and claim your daily prize!"</p>
+                                <div class="w-fit mx-auto pt-2">
+                                    <button class="py-4 px-8 bg-[#a853d6] text-white rounded-lg text-sm ">
+                                        Join now
+                                    </button>
+                                </div>
+                                <p class="text-sm text-[#637381] text-center py-2">Already have an account? <a href="#"
+                                        class="text-[#a853d6] underline"> Sign in</a></p>
+                            </div>
+                            <div class="bg-white shadow shadow-xl px-4 py-8 rounded-lg z-50 relative mt-4">
+                                <h2 class="text-base font-bold text-center">Points</h2>
+                                <p class="text-sm text-[#637381] text-center py-2">Earn more Points for different
+                                    actions,
+                                    and
+                                    turn those Points into awesome rewards!</p>
+                                <div>
+                                    <div
+                                        class="mb-2 relative after:absolute after:bg-[#637381] after:w-[calc(100%-3rem)] after:h-px after:content-[''] after:-bottom-2 after:right-0">
+                                        <a href="#"
+                                            class="earn-more-points text-[#637381] text-sm flex justify-between items-center px-2 py-4 hover:bg-gray-50 rounded-lg duration-300 ease-in-out">
+                                            <div class="flex items-center gap-4">
+                                                <img src="img/earn-more-points.svg" alt="">
+                                                <span>Ways to earn</span>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="pt-2">
+                                        <a href="#"
+                                            class="spend-your-points text-[#637381] text-sm flex justify-between items-center px-2 py-4 hover:bg-gray-50 rounded-lg duration-300 ease-in-out">
+                                            <div class="flex items-center gap-4">
+                                                <img src="img/spend-your-points.svg" alt="">
+                                                <span>Ways to redeem</span>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow shadow-xl px-4 py-8 rounded-lg z-50 relative mt-4">
+                                <h2 class="text-base font-bold text-center">Referrals</h2>
+                                <p class="text-sm text-[#637381] text-center py-2">Give your friends a reward and claim
+                                    your
+                                    own
+                                    when they make a purchase.</p>
+                                <div>
+                                    <div class="px-2 py-4">
+                                        <div class="flex items-center gap-4 pb-8">
+                                            <img src="img/fixed-amount.svg" alt="">
+                                            <div class="text-sm">
+                                                <p>They get</p>
+                                                <p class="text-[#637381]" id="ten">$10 off coupon</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-4">
+                                            <img src="img/fixed-amount.svg" alt="">
+                                            <div class="text-sm">
+                                                <p>You get</p>
+                                                <p class="text-[#637381]" id="eleven">$10 off coupon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sticky bottom-0 bg-white shadow w-full z-50 left-0 p-4 text-center">
+                        <p>
+                            We reward with Smile
+                        </p>
+                    </div>
+                </div>
+                <div class="spend-your-points-body">
+                    <div>
+                        <div class="bg-[#a853d6] rounded-t-lg z-10">
+                            <div class="modal-heading text-white p-4 flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="w-4 h-4 spend-your-points hover:cursor-pointer">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                    </svg>
+                                    <p class="text-sm">Treat Bucks!</p>
+                                </div>
+                                <button class="modal-close modal-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="w-4 h-4 icon-close icon text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-lg z-50 relative">
+                            <h2 class="text-base font-bold">Redeem</h2>
+                            <div>
+                                <div class="px-2 py-8" id="modal_data2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticky bottom-0 bg-white shadow w-full z-50 left-0 p-4 text-center">
+                            <div class="w-full mx-auto pt-2">
+                                <button class="py-4 px-8 bg-[#a853d6] text-white rounded-lg text-sm w-full">
+                                    Join now
+                                </button>
+                            </div>
+                            <p class="text-sm text-[#637381] text-center py-2">Already have an account? <a href="#"
+                                    class="text-[#a853d6] underline"> Sign in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="earn-more-points-body">
+                    <div>
+                        <div class="bg-[#a853d6] rounded-t-lg z-10">
+                            <div class="modal-heading text-white p-4 flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="w-4 h-4 earn-more-points hover:cursor-pointer">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                    </svg>
+
+                                    <p class="text-sm">Treat Bucks!</p>
+                                </div>
+                                <button class="modal-close modal-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="w-4 h-4 icon-close icon text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-lg z-50 relative">
+                            <h2 class="text-base font-bold">Ways to earn</h2>
+                            <div>
+                                <div class="px-2 py-8" id="modal_data">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="sticky bottom-0 bg-white shadow w-full z-50 left-0 p-4 text-center">
+                            <div class="w-full mx-auto pt-2">
+                                <button class="py-4 px-8 bg-[#a853d6] text-white rounded-lg text-sm w-full">
+                                    Join now
+                                </button>
+                            </div>
+                            <p class="text-sm text-[#637381] text-center py-2">Already have an account? <a href="#"
+                                    class="text-[#a853d6] underline"> Sign in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <div class="w-fit">
+            <button
+                class="modal-toggle reward-btn bg-[#a853d6] text-white py-3 px-6 rounded-full block hover:cursor-pointer">
+                <div class="flex items-center gap-2 rewards">
+                    <i class="fa-solid fa-gift text-3xl"></i>
+                    <span class="text-base">Rewards</span>
+                </div>
+                <div class="close hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-8 h-8 icon-close icon text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const container = document.getElementById("modal_data");
+            $.ajax({
+                url: '/../reward_system/modal.php',
+                type: 'get',
+                data: { name: 1 },
+                dataType: 'JSON',
+                success: function (response) {
+                    // console.log(response);
+                    var len = response.length;
+                    // console.log(len);
+                    for (var i = 0; i < len; i++) {
+                        var name = response[i].name;
+                        var points = response[i].points;
+                        // Create the new div element
+                        const newDiv = document.createElement('div');
+                        newDiv.className = 'flex items-center gap-4 pb-8 relative after:absolute after:bg-[#637381] after:w-[calc(100%-3rem)] after:h-px after:content-[""] after:bottom-4 after:right-0';
+
+                        // Create the image element
+                        const newImg = document.createElement('img');
+                        newImg.src = 'img/signup.svg';
+                        newImg.alt = '';
+
+                        // Create the inner div element
+                        const newInnerDiv = document.createElement('div');
+                        newInnerDiv.className = 'text-sm';
+
+                        // Create the title paragraph element
+                        const newTitleP = document.createElement('p');
+                        newTitleP.textContent = name;
+
+                        // Create the points paragraph element
+                        const newPointsP = document.createElement('p');
+                        newPointsP.className = 'text-[#637381]';
+                        newPointsP.textContent = points + " Points";
+
+                        // Append the elements to the respective parents
+                        newInnerDiv.appendChild(newTitleP);
+                        newInnerDiv.appendChild(newPointsP);
+                        newDiv.appendChild(newImg);
+                        newDiv.appendChild(newInnerDiv);
+                        container.appendChild(newDiv);
+                    }
+                }
+            });
+            const container2 = document.getElementById("modal_data2");
+
+            $.ajax({
+                url: '/../reward_system/modal.php',
+                type: 'get',
+                data: { name: 2 },
+                dataType: 'JSON',
+                success: function (response) {
+                    var len = response.length;
+                    // console.log(response);
+                    for (var i = 0; i < len; i++) {
+                        const newDiv = document.createElement('div');
+                        newDiv.className = 'flex items-center gap-4 pb-8 relative after:absolute after:bg-[#637381] after:w-[calc(100%-3rem)] after:h-px after:content-[""] after:bottom-4 after:right-0';
+
+                        // Create a new img element
+                        const newImg = document.createElement('img');
+                        newImg.src = 'img/fixed-amount.svg';
+                        newImg.alt = '';
+
+                        // Create a new div element for text content
+                        const newTextDiv = document.createElement('div');
+                        newTextDiv.className = 'text-sm';
+
+                        // Create a new p element for the coupon
+                        const newCouponP = document.createElement('p');
+                        newCouponP.textContent = response[i];
+
+                        // Append the elements to their respective parents
+                        newTextDiv.appendChild(newCouponP);
+                        newDiv.appendChild(newImg);
+                        newDiv.appendChild(newTextDiv);
+                        container2.appendChild(newDiv);
+                    }
+                }
+            });
+
+            $.ajax({
+                url: '/../reward_system/modal.php',
+                type: 'get',
+                data: { name: 3 },
+                dataType: 'JSON',
+                success: function (response) {
+                    var len = response.length;
+                    // console.log(response);
+                    for (var i = 0; i < len; i++) {
+                        if (i == 0) {
+                            document.getElementById("ten").innerHTML = response[0] + " Points"
+                        }
+                        else if (i == 1) {
+                            document.getElementById("eleven").innerHTML = response[1] + " Points"
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>

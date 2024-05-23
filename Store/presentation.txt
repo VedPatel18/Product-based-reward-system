@@ -1,0 +1,24 @@
+Open:
+    store with spin available (incognito)
+    store with spin unavilable/Premium Deactivated
+    dashboard
+    PHPMYADMIN
+    script to evaluate orders
+    script to evaluate review
+
+Present:
+    Store:
+        Popup:
+            SPIN IT
+            Active Reward Schemes
+            Premium User Benefits
+        Review & Checkout:
+            Write review (will get added to DB & While Running script point will be distributed)
+            Can check for discount first using ajax
+            While placing order, will get added to db. Script...
+    
+    Dashboard:
+        Everything point wise
+        
+
+    
